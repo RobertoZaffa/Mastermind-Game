@@ -1,0 +1,98 @@
+# Mastermind-Game
+Python script to play Mastermind as code breaker and code maker  
+This script permit to play Mastermind checking wich remaining code it is posible to play in order to guess the secret code.
+This codes are called left code.
+With the left code are displayed also the best codes, these codes are the ones that offer the best chance of guessing the secret code in the least number of attempts.
+A detailed explanation is available at: https://mastermind.altervista.org/left-code-and-best-codes/.
+
+
+
+
+Example of a game played that used best codes:
+
+ M A S T E R    M I N D    G A M E    by zaffaroby@gmail.com
+
+================================================================================
+1)Game1  2)Game2  6)6 Colors(default)  8)8 Colors  9)Help  0)End 1
+
+Enter four digit code or 1)Print left/best codes  2)Check secret code  3)End 1234
+
+[1, 2, 3, 4] X
+--------------------------------------------------------------------------------
+
+Enter four digit code or 1)Print left/best codes  2)Check secret code  3)End 1
+
+Left Codes: 108            Best Codes: 24
+[1, 1, 5, 5] 24            [2, 5, 6, 6] 19
+[1, 1, 6, 6] 24            [2, 6, 5, 5] 19
+[1, 5, 1, 5] 24            [3, 5, 6, 5] 19
+[1, 5, 5, 1] 24            [3, 6, 5, 6] 19
+[1, 5, 5, 6] 24            [4, 5, 5, 6] 19
+[1, 5, 6, 5] 24            [4, 6, 6, 5] 19
+[1, 5, 6, 6] 24            [5, 1, 6, 6] 19
+[1, 6, 1, 6] 24            [5, 3, 6, 5] 19
+[1, 6, 5, 5] 24            [5, 4, 5, 6] 19
+[1, 6, 5, 6] 24            [5, 5, 4, 6] 19
+[1, 6, 6, 1] 24            [5, 5, 6, 3] 19
+[1, 6, 6, 5] 24            [5, 6, 1, 6] 19
+[2, 2, 5, 5] 24            [5, 6, 2, 5] 19
+[2, 2, 6, 6] 24            [5, 6, 5, 2] 19
+[3, 5, 3, 5] 24            [5, 6, 6, 1] 19
+[3, 6, 3, 6] 24            [6, 1, 5, 5] 19
+[4, 5, 5, 4] 24            [6, 3, 5, 6] 19
+[4, 6, 6, 4] 24            [6, 4, 6, 5] 19
+[5, 2, 2, 5] 24            [6, 5, 1, 5] 19
+[5, 2, 5, 2] 24            [6, 5, 2, 6] 19
+Elapsed time for processing: 0.5
+
+Enter four digit code or 1)Print left/best codes  2)Check secret code  3)End 2566
+
+[2, 5, 6, 6] XX0
+[1, 2, 3, 4] X
+--------------------------------------------------------------------------------
+
+Enter four digit code or 1)Print left/best codes  2)Check secret code  3)End 1
+
+Left Codes: 5              Best Codes: 4
+[2, 2, 5, 6] 1             [2, 2, 5, 6] 1
+[2, 2, 6, 5] 1             [2, 2, 6, 5] 1
+[6, 5, 3, 6] 1             [6, 5, 3, 6] 1
+[6, 5, 6, 4] 1             [6, 5, 6, 4] 1
+[6, 2, 6, 6] 4
+Elapsed time for processing: 0.03
+
+Enter four digit code or 1)Print left/best codes  2)Check secret code  3)End 2256
+
+[2, 2, 5, 6] XX00
+[2, 5, 6, 6] XX0
+[1, 2, 3, 4] X
+--------------------------------------------------------------------------------
+
+Enter four digit code or 1)Print left/best codes  2)Check secret code  3)End 1
+
+Left Codes: 1              Best Codes: 1
+[2, 2, 6, 5] 1             [2, 2, 6, 5] 1
+Elapsed time for processing: 0.02
+
+Enter four digit code or 1)Print left/best codes  2)Check secret code  3)End 2265
+
+[2, 2, 6, 5] XXXX
+[2, 2, 5, 6] XX00
+[2, 5, 6, 6] XX0
+[1, 2, 3, 4] X
+--------------------------------------------------------------------------------
+
+Secret code GUESSED
+
+================================================================================
+1)Game1  2)Game2  6)6 Colors(default)  8)8 Colors  9)Help  0)End 9
+
+ 1)Game 1 - You will try to guess computer secret code
+ 2)Game 2 - Computer will try to guess your secret code
+ 6)6 Colors - For both Game1 and Game2 you will use 6 colors/digits (default)
+ 8)8 Colors - For both Game1 and Game2 you will use 8 colors/digits
+ 
+ In game 2, use "X" for any present number in right position (usually black pegs)
+                "0" for any present number but in wrong position (usually whiye pegs)
+ 
+ 
